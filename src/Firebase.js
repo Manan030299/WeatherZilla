@@ -4,7 +4,6 @@ import {getDatabase} from 'firebase/database';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
-  // apiKey: 'AIzaSyAbPs0ceeqehkUthLCt659vfBuK2FaJxiQ',
   authDomain: 'weatherzilla-290a9.firebaseapp.com',
   databaseURL: 'https://weatherzilla-290a9-default-rtdb.firebaseio.com',
   projectId: 'weatherzilla-290a9',
@@ -17,5 +16,5 @@ const firebaseConfig = {
 export const app = initializeApp(firebaseConfig);
 export const database = getDatabase(app);
 export const auth = getAuth(app);
-export const provider = new GoogleAuthProvider;
+export const provider = new GoogleAuthProvider();
 
