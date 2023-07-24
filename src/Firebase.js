@@ -4,13 +4,13 @@ import {getDatabase} from 'firebase/database';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: 'weatherzilla-290a9.firebaseapp.com',
-  databaseURL: 'https://weatherzilla-290a9-default-rtdb.firebaseio.com',
-  projectId: 'weatherzilla-290a9',
-  storageBucket: 'weatherzilla-290a9.appspot.com',
-  messagingSenderId: '376543401685',
-  appId: '1:376543401685:web:1666171cdf87eda631745c',
-  measurementId: 'G-EYFCMH0VXH',
+  authDomain: "weatherzilla.firebaseapp.com",
+  databaseURL: "https://weatherzilla-default-rtdb.firebaseio.com",
+  projectId: "weatherzilla",
+  storageBucket: "weatherzilla.appspot.com",
+  messagingSenderId: "831862181120",
+  appId: "1:831862181120:web:1d94917fcd963d061037e5",
+  measurementId: "G-5TB4R3VBN6"
 };
 
 export const app = initializeApp(firebaseConfig);

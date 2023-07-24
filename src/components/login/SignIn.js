@@ -99,14 +99,9 @@ export const SignIn = () => {
   };
 
   const handleGoogleSignIn = () => {
-    console.log('Hello1')
     onValue(ref(database, 'users/'), (snapshot) => {
-      console.log('Hello2')
-      const userData = Object.values(snapshot.val());
+      const userData = Object.values(snapshot.val() || {});
       const emails = userData.map((user) => user.email);
-      console.log('Hello3')
-      console.log(userData);
-      console.log('Hello4')
       signInWithPopup(auth, provider)
           .then((result) => {
             const user = result.user;
